@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Portfolio Website - Blog</title>
+    <link rel="stylesheet" href="style-2.css">
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Poppins', sans-serif;
+		background-color: #ECEBDE;
+	}
+	.container{
+		width: 100%;
+		height: 30vh;
+		padding: 20px 10%;
+	}
+	nav {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	/*header logo*/
+	nav .logo {
+		width: 150px;
+		cursor: pointer;
+	}
+	nav .menu-img {
+		width: 50px;
+		cursor: pointer;
+	}
+	/*header nav*/
+	nav ul {
+		flex: 1;
+		text-align: right;
+		margin-right: 150px;
+		font-size: 20px;
+	}
+	nav ul li {
+		list-style: none;
+		display: inline-block;
+		margin: 10px 30px;
+	}
+	nav ul li a{
+		text-decoration: none;
+		color: #fff;
+		font-weight: 700;
+		position: relative;
+		padding: 10px;
+	}
+	nav ul li a:hover {
+		text-decoration: none;
+		color: #9BEC00;
+		transition: 0.4s ease-in-out;
+	}
+	/* Blog Entries */
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 15px;
+		padding: 15px;
+	}
+	.grid-item {
+		background-color:#ECEBDE;
+		border: 1px solid #222;
+		border-radius: 10px;
+		padding: 20px;
+		color: #D2FF72;
+		font-size: 16px;
+		text-align: center;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+		transition: transform 0.3s ease;
+	}
+	.grid-item h2 {
+		font-weight: 700;
+		font-size: 20px;
+		color: #ECEBDE;
+	}
+	.grid-item:hover {
+		transform: scale(1.05);
+	}
+	.grid-item img {
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		margin-bottom: 10px;
+	}
+	.grid-item a {
+		color: #c9f831;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.grid-item a:hover {
+		text-decoration: underline;
+	}
+	/* Footer */
+	footer {
+		background-color: #ECEBDE;
+		color: #0e0e0e;
+		text-align: center;
+		padding: 10px 0;
+		border-top: 1px solid #9BEC00;
+	}
+	footer small {
+		font-size: 8px;
+	}
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <img src="images/blckartchive.png" class="logo">
+                <a href="t1.html"></a>
+            <ul>
+                <li><a href="t1.html">HOME</a></li>
+                <li><a href="t2.html">BLOG</a></li>
+                <li><a href="t3.html">FLEX PAGE</a></li>
+            </ul>
+            <img src="images/menu-white.png" class="menu-img">
+        </nav>
+    </div>
+    <main>
+        <div class="content">
+            <h1>Prose</h1>
+            <p>few collections of my "decent" written pieces</p>
+            <div class="line"></div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h5>Black-Feathered Knights</h5>
+                <p>"...a teenager found its comfort to a viscious raven in the middle of an afternoon gloomy showers"</p>
+                <img src="images/Black_feathered_knights.jpg" alt="feather">
+                <a href="E:\IT111\images\Black_feathered_knights.jpg">View</a>
+            </div>
+            <div class="grid-item">
+                <h5>The Broken Liar</h5>
+                <p>"A 20-year-old youth who rather tell lies than being honest to itself, who began to have existential crises in one sitting."</p>
+                <img src="images/The_Broken_Liar.jpg" alt="liar">
+                <a href="E:\IT111\images\The_Broken_Liar.jpg">View</a>
+            </div>
+            <div class="grid-item">
+                <h5>The Inferior One</h5>
+                <p>"a young daft poet who has inferiority complex, compares himself to anyone he sees. A typical perseption of a broken youth with insecurities."</p>
+                <img src="images/The_Inferior_One.jpg" alt="pity">
+                <a href="E:\IT111\images\The_Inferior_One.jpg">View</a>
+            </div>
+            <div class="grid-item">
+                <h5>The Seraph of thine End</h5>
+                <p>"A doomed young love where one focused to love the other who has suicidal thoughts and later on successfully took its own life."</p>
+                <img src="images/tsote.jpg" alt="seraph">
+                <a href="E:\IT111\images\tsote.jpg">View</a>
+            </div>
+            <div class="grid-item">
+                <h5>Transfixed Prototypes</h5>
+                <p>"a home doesn't seems like a home anymore." A meccha-descriptive prose.</p>
+                <img src="images/Transfixed_Prototype.jpg" alt="meccha">
+                <a href="E:\IT111\images\Transfixed_Prototype.jpg">View</a>
+            </div>
+        </div>
+
+        <div class="content-2">
+            <h2>Traditional Art sneaks</h2>
+            <p>Below are my casual sketches whenever I am alone.</p>
+            <div class="line"></div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>TradiArt #1</h2>
+                <img src="images/img-1.jpg" alt="draw1">
+                <a href="E:\IT111\images\img-1.jpg">View</a>
+            </div>
+            <div class="grid-item">
+                <h2>TradiArt #2</h2>
+                <img src="images/img-2.jpg" alt="draw2">
+                <a href="E:\IT111\images\img-2.jpg">View</a>
+            </div>
+            <div class="grid-item">
+                <h2>TradiArt #3</h2>
+                <img src="images/img-3.jpg" alt="draw3">
+                <a href="E:\IT111\images\img-3.jpg">View</a>
+            </div>
+            <div class="grid-item">
+                <h2>TradiArt #4</h2>
+                <img src="images/img-4.jpg" alt="draw4">
+                <a href="E:\IT111\images\img-4.jpg">View</a>
+            </div>
+            <div class="grid-item">
+                <h2>TradiArt #5</h2>
+                <img src="images/img-5.jpg" alt="draw5">
+                <a href="E:\IT111\images\img-5.jpg">View</a>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <small>© Coded by Issyd Tion - All Rights Reserved 2024.</small>
+    </footer>
+
+</body>
+</html>
